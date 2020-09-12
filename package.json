@@ -49,9 +49,5 @@
     "lint-staged": ">=10",
     "prettier": "2.1.1",
     "standard-version": "^9.0.0"
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md,scss}": "prettier --check ."
   }
 }
