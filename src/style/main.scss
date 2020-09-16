@@ -1,0 +1,21 @@
+@import "./colors";
+
+* {
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: $ice;
+}
+
+ul {
+  list-style: none;
+}
