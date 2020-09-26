@@ -10,7 +10,8 @@ export const Api = axios.create({
 export const getStreamers = () => {
   return Api.get("kraken/users", {
     params: {
-      login: "gaules,deercheerup",
+      login:
+        "gaules,deercheerup,boltz,ale_apoka,mch_agg,cidcidoso,flowpodcast,yoda",
     },
     headers: {
       Accept: REACT_APP_ACCEPT,
