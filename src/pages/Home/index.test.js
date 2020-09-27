@@ -4,6 +4,6 @@ import Home from "./";
 
 test("renders home", () => {
   const { getByText } = render(<Home />);
-  const linkElement = getByText(/list of streamers/i);
+  const linkElement = getByText(/procurar/i);
   expect(linkElement).toBeInTheDocument();
 });
