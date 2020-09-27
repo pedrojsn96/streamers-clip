@@ -1,0 +1,32 @@
+@import "../../style/colors";
+@import "../../style/tokens";
+
+.header {
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  padding: $space-small;
+  position: fixed;
+  width: 100%;
+
+  &__logo {
+    height: $space-small * 9;
+  }
+
+  &__donation-section {
+    display: flex;
+    align-items: center;
+    margin: $space-small;
+  }
+
+  &__donation-text {
+    max-width: $space-small * 7;
+    text-align: center;
+    margin-right: $space-small;
+  }
+
+  &__qrcode {
+    width: $space-small * 7;
+    height: $space-small * 7;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { getStreamers } from "../../services";
-import Card from "../../components/Card";
+import { Card, Header } from "../../components";
 
 import { useHistory } from "react-router-dom";
 
@@ -22,6 +22,7 @@ const Home = () => {
 
   return (
     <div>
+      <Header />
       <h1>List of Streamers</h1>
       {!Boolean(streamers.length) && (
         <div>
