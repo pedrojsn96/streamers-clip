@@ -1,0 +1,14 @@
+@import "../../style/colors";
+@import "../../style/tokens";
+
+.home-page {
+  &__title {
+    color: $black;
+    font-size: $font-size-small * 3;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

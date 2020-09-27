@@ -6,8 +6,8 @@
   display: flex;
   justify-content: space-between;
   padding: $space-small;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  top: 0;
 
   &__logo {
     height: $space-small * 9;
@@ -16,7 +16,6 @@
   &__donation-section {
     display: flex;
     align-items: center;
-    margin: $space-small;
   }
 
   &__donation-text {
@@ -26,7 +25,7 @@
   }
 
   &__qrcode {
-    width: $space-small * 7;
-    height: $space-small * 7;
+    width: $space-small * 9;
+    height: $space-small * 9;
   }
 }

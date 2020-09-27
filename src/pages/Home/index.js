@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import "./index.scss";
+import React, { useEffect, useState, Fragment } from "react";
 
 import { getStreamers } from "../../services";
 import { Card, Header } from "../../components";
@@ -21,25 +22,24 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <Fragment>
       <Header />
-      <h1>List of Streamers</h1>
-      {!Boolean(streamers.length) && (
-        <div>
-          <p>Loading</p>
-        </div>
-      )}
+      <div className="home-page">
+        <h1 className="home-page__title">Procurar</h1>
+        <div className="home-page__content">
+          {!Boolean(streamers.length) && (
+            <div>
+              <p>Loading</p>
+            </div>
+          )}
 
-      {streamers.length !== 0 &&
-        streamers.map((streamer) => (
-          <div
-            key={streamer.display_name}
-            onClick={() => handleCardClick(streamer)}
-          >
-            <Card streamer={streamer} />
-          </div>
-        ))}
-    </div>
+          {streamers.length !== 0 &&
+            streamers.map((streamer) => (
+              <Card streamer={streamer} handleClick={handleCardClick} />
+            ))}
+        </div>
+      </div>
+    </Fragment>
   );
 };
 
