@@ -3,6 +3,8 @@
 
 .card {
   color: $black;
+  padding: $space-normal 0;
+  cursor: pointer;
 
   &__image {
     width: 250px;
@@ -11,15 +13,22 @@
 
   &__description {
     max-width: 250px;
+    padding: $space-normal 0;
   }
 
   &__name {
     font-size: $font-size-normal;
     font-weight: bold;
+    padding: $space-small 0;
   }
 
   &__bio {
     font-size: $font-size-small;
     font-weight: 300;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-align: justify;
   }
 }

@@ -1,0 +1,51 @@
+@import "../../style/colors";
+@import "../../style/tokens";
+
+.streamer-page {
+  &__title {
+    color: $black;
+    font-size: $font-size-small * 3;
+    padding: $space-normal 0;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-decoration: none;
+  }
+
+  &__clips-frame {
+    cursor: pointer;
+    width: 480px;
+    height: 280px;
+  }
+
+  &__clips-description {
+    display: flex;
+    max-width: 480px;
+    flex-direction: column;
+    padding: $space-small 0;
+  }
+
+  &__clips-title {
+    font-size: $font-size-normal;
+    font-weight: bold;
+  }
+
+  &__clips-info {
+    display: flex;
+    padding: $space-small 0;
+  }
+
+  &__clips-views {
+    margin-right: $space-normal;
+  }
+
+  &__clips-date {
+    margin-left: $space-normal;
+  }
+
+  &__icon {
+    margin-right: $space-small;
+  }
+}

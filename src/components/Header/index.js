@@ -2,8 +2,15 @@ import "./index.scss";
 import React from "react";
 import StreamClips from "../../images/stream-clips.svg";
 import QRCode from "../../images/qrcode.png";
+import { useHistory } from "react-router-dom";
 
 const Header = () => {
+  const history = useHistory();
+
+  const handleLogoClik = () => {
+    history.push("/");
+  };
+
   return (
     <header className="header">
       <div>
@@ -11,6 +18,7 @@ const Header = () => {
           className="header__logo"
           src={StreamClips}
           alt="Stream Clips logo"
+          onClick={() => handleLogoClik()}
         />
       </div>
       <div className="header__donation-section">
