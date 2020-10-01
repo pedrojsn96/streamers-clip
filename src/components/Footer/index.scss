@@ -1,0 +1,42 @@
+@import "../../style/colors";
+@import "../../style/tokens";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: $space-small;
+  bottom: 0;
+
+  &__logo {
+    height: $space-small * 7;
+    cursor: pointer;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__donation-section {
+    display: none;
+
+    @media (min-width: $mobile-l) {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+    }
+  }
+
+  &__donation-text {
+    max-width: $space-small * 10;
+    text-align: center;
+    margin-right: $space-small;
+  }
+
+  &__qrcode {
+    width: $space-small * 7;
+    height: $space-small * 7;
+  }
+}

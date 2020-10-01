@@ -2,7 +2,7 @@ import "./index.scss";
 import React, { useEffect, useState, Fragment } from "react";
 
 import { getStreamers } from "../../services";
-import { Card, Header } from "../../components";
+import { Card, Header, Footer } from "../../components";
 
 import { useHistory } from "react-router-dom";
 
@@ -39,6 +39,7 @@ const Home = () => {
             ))}
         </div>
       </div>
+      <Footer />
     </Fragment>
   );
 };

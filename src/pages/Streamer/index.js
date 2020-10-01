@@ -3,7 +3,7 @@ import React, { useEffect, useState, Fragment } from "react";
 import { getClips } from "../../services";
 
 import { useParams } from "react-router-dom";
-import { Header } from "../../components";
+import { Header, Footer } from "../../components";
 
 const Streamer = () => {
   const { name, id } = useParams();
@@ -70,6 +70,7 @@ const Streamer = () => {
             ))}
         </div>
       </div>
+      <Footer />
     </Fragment>
   );
 };
