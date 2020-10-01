@@ -10,8 +10,12 @@
   top: 0;
 
   &__logo {
-    height: $space-small * 9;
+    height: $space-small * 7;
     cursor: pointer;
+
+    @media (min-width: $mobile) {
+      height: $space-small * 9;
+    }
   }
 
   &__donation-section {
@@ -26,7 +30,12 @@
   }
 
   &__qrcode {
-    width: $space-small * 9;
-    height: $space-small * 9;
+    width: $space-small * 7;
+    height: $space-small * 7;
+
+    @media (min-width: $mobile) {
+      width: $space-small * 9;
+      height: $space-small * 9;
+    }
   }
 }

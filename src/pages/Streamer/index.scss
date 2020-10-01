@@ -10,21 +10,43 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     text-decoration: none;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: $mobile-l) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__clips-frame {
     cursor: pointer;
-    width: 480px;
-    height: 280px;
   }
 
   &__clips-description {
     display: flex;
-    max-width: 480px;
+    max-width: 320px;
     flex-direction: column;
     padding: $space-small 0;
+
+    @media (min-width: $tablet) {
+      max-width: 400px;
+    }
+
+    @media (min-width: $desktop-s) {
+      max-width: 480px;
+    }
+  }
+
+  &__clips-thumbnail {
+    width: 320px;
+
+    @media (min-width: $tablet) {
+      width: 400px;
+    }
+
+    @media (min-width: $desktop-s) {
+      width: 480px;
+    }
   }
 
   &__clips-title {

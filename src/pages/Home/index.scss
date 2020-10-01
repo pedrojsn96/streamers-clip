@@ -5,10 +5,23 @@
   &__title {
     color: $black;
     font-size: $font-size-small * 3;
+    padding: $space-small $space-normal * 3;
+
+    @media (min-width: $mobile) {
+      padding: $space-small 0;
+    }
   }
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: $mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $tablet) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }

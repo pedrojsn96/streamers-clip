@@ -30,10 +30,17 @@ const Streamer = () => {
 
           {clips.length !== 0 &&
             clips.map((clip) => (
-              <a href={clip.url} key={clip.id} target="blank">
-                <div className="streamer-page__clips-frame">
-                  <img src={clip.thumbnail_url} alt="Clip thumbnail" />
-                </div>
+              <a
+                className="streamer-page__clips-frame"
+                href={clip.url}
+                key={clip.id}
+                target="blank"
+              >
+                <img
+                  className="streamer-page__clips-thumbnail"
+                  src={clip.thumbnail_url}
+                  alt="Clip thumbnail"
+                />
                 <div className="streamer-page__clips-description">
                   <p className="streamer-page__clips-title">{clip.title}</p>
                   <div className="streamer-page__clips-info">

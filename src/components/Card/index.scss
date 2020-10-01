@@ -5,15 +5,31 @@
   color: $black;
   padding: $space-normal 0;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $mobile) {
+    align-items: baseline;
+  }
 
   &__image {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+
+    @media (min-width: $mobile) {
+      width: 250px;
+      height: 250px;
+    }
   }
 
   &__description {
-    max-width: 250px;
+    max-width: 300px;
     padding: $space-normal 0;
+
+    @media (min-width: $mobile) {
+      max-width: 250px;
+    }
   }
 
   &__name {
